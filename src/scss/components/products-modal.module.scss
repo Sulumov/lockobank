@@ -1,0 +1,130 @@
+.products-modal {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  max-width: 970rem;
+  background: #FFFFFF;
+  box-shadow: 0 0 15rem rgba(0, 57, 166, 0.1);
+  border-radius: 10rem;
+  padding: 45rem 42rem;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: none;
+  .products-modal--active{
+    display: block !important;
+  }
+  &__header {
+    display: flex;
+    &-wrapper {
+      justify-content: space-between;
+      align-items: end;
+    }
+  }
+  &__title {
+    color: #0039A6;
+    font-size: 26rem;
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-weight: 700;
+    margin-left: 30rem;
+    display: inline-block;
+  }
+  &__close {
+    cursor: pointer;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30rem;
+    &-title {
+      font-family: Uni Sans Heavy Caps, Arial, sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26rem;
+      &--yellow {
+        color: #EEAF30;
+      }
+      &--blue {
+        color: #0039A6;
+      }
+    }
+  }
+  &__block:first-child {
+    margin-right: 50rem;
+  }
+  &__list {
+    list-style: disc;
+    margin-top: 20rem;
+    &-text {
+      font-size: 18rem;
+      line-height: 24rem;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-weight: 600;
+      &--yellow {
+        color: #EEAF30;
+      }
+      &--blue {
+        color: #0039A6;
+      }
+    }
+    &-item {
+      margin-top: 30rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__close-link {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 40rem;
+    color: #0039A6;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+}
+
+@media (max-width: 813px) {
+  .products-modal {
+    width: 90%;
+    bottom: auto;
+    &__close-link {
+      display: block;
+    }
+    &__title {
+      font-size: 16rem;
+      order: 1;
+      margin-left: 0;
+      margin-right: 30rem;
+    }
+    &__icon {
+      order: 2;
+    }
+    &__header {
+      align-items: center
+    }
+    &__body {
+      flex-wrap: wrap;
+      &-title {
+        font-size: 18rem;
+        &--blue {
+          margin-top: 40rem;
+        }
+      }
+    }
+    &__block {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+    &__list {
+      margin-top: 3rem;
+    }
+    &__close {
+      display: none;
+    }
+  }
+}

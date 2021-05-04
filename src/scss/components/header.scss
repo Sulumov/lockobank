@@ -1,0 +1,135 @@
+.header {
+  background: #010B1F;
+  box-shadow: 0rem 4rem 10rem rgba(1, 58, 109, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26rem 0;
+  }
+
+  &__logo {
+    background-image: url("../img/logo_dark.svg");
+    background-size: cover;
+    width: 206rem;
+    height: 47rem;
+  }
+
+  &__nav {
+    display: flex;
+
+    a {
+      color: #fff;
+      font-size: 16rem;
+      line-height: 18rem;
+      padding: 15rem 29rem;
+      transition: .1s ease-in;
+
+      &:hover {
+        text-shadow: 0rem 0rem 40rem #fff;
+      }
+    }
+  }
+
+  &__call {
+    font-weight: bold;
+    font-size: 16rem;
+    line-height: 18rem;
+    color: #EEAF30;
+    padding: 15rem 28rem;
+  }
+
+  &__open-account {
+    background: #EEAF30;
+    box-shadow: 0rem 0rem 5rem rgba(238, 175, 48, 0.25);
+    border-radius: 10rem;
+    padding: 11rem 39rem 13rem;
+    color: #fff;
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+
+  &__mobile-menu {
+    display: none;
+    background-image: url("../img/burger_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 71rem;
+    height: 92rem;
+
+    &.active {
+      background-image: url("../img/close_dark.svg");
+    }
+
+  }
+
+  @media (max-width: 813px) {
+    &__mobile-menu {
+      display: inline-block;
+    }
+    &__open-account {
+      display: none;
+    }
+
+    &__call {
+      font-size: 0;
+      width: 37rem;
+      height: 37rem;
+      border-radius: 50%;
+      background-image: url("../img/phone_dark.svg");
+      background-size: 15rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0;
+      background-color: #EEAF30;
+      margin-left: auto;
+    }
+
+    &__logo {
+      width: 196rem;
+      height: 53rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &__container {
+      padding: 0 0 0 13rem;
+    }
+
+    &__nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 91rem;
+      background: #010B1F;
+      flex-direction: column;
+      border-radius: 0rem 0rem 10rem 10rem;
+      max-height: 0rem;
+      overflow: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+      transition: .1s linear;
+
+      &.active {
+        padding-bottom: 57rem;
+        padding-top: 23rem;
+        max-height: calc(100vh - 92rem);
+        overflow-y: auto;
+      }
+
+      a {
+        padding: 23rem 31rem;
+
+        &::before {
+          content: "–";
+          display: inline-block;
+          margin-right: 21rem;
+        }
+      }
+    }
+  }
+}

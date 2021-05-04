@@ -1,0 +1,148 @@
+.tariffs-mobile {
+  margin-bottom: 132rem;
+  position: relative;
+  &__heading {
+    margin-bottom: 47rem;
+  }
+  &__list {
+    .slick-prev {
+      left: 15%;
+      &:before {
+        transform: rotate(180deg);
+        padding-bottom: 7rem !important;
+      }
+    }
+    .slick-next {
+      left: 76%;
+    }
+    .slick-prev,
+    .slick-next {
+      top: 105%;
+      width: 40rem;
+      height: 40rem;
+      z-index: 100;
+      box-shadow: 0 0 15rem rgba(142, 142, 142, 0.1);
+      border-radius: 50%;
+      border: 1rem solid #F2F1F1;
+      &:before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 5rem 4rem;
+        content: url('../img/arrow.png');
+      }
+    }
+    &-item {
+      background: #FFFFFF;
+      box-shadow: 0rem 0rem 5rem rgba(142, 142, 142, 0.15);
+      width: 100%;
+      border-radius: 10rem;
+      padding: 23rem 16rem;
+      margin-right: 20rem;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+      width: 37rem;
+      height: 37rem;
+    }
+  }
+  &__title {
+    color: #5EB7B2;
+    text-transform: uppercase;
+    font-family: Uni Sans Heavy Caps, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    &--blue {
+      color: #0039A6;
+    }
+  }
+  &__subtitle {
+    color: #333333;
+    font-family: 'Ubuntu',Arial, sans-serif;
+    font-size: 14rem;
+  }
+  &__body {
+    margin-top: 25rem;
+  }
+  &__price-description {
+    color: #333333;
+    font-family: Segoe UI, Arial, sans-serif;
+    font-size: 15rem;
+  }
+  &__price {
+    color: #666666;
+    font-weight: 900;
+    font-size: 26rem;
+    font-family: Uni Sans Heavy Caps, Arial, sans-serif;
+    margin-top: 7rem;
+    &--mb {
+      margin-bottom: 26rem;
+    }
+    &--medium {
+      font-size: 16rem;
+      font-family: Segoe UI,Arial, sans-serif;
+      font-weight: bold;
+      color: #666666;
+    }
+    &--small {
+      font-size: 12rem;
+    }
+    &--mb {
+      margin-bottom: 26rem;
+    }
+  }
+  &__link {
+    color: #5EB7B2;
+    text-decoration-line: underline;
+    font-family: 'Ubuntu',Arial, sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 18rem;
+  }
+  &__hr {
+    margin: 16rem 0;
+  }
+  .slick-slide {
+    margin: 10rem 27rem;
+  }
+  .slick-list {
+    margin: -10rem -27rem;
+  }
+}
+
+.tariffs-modal {
+  position: absolute;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 0 15rem rgba(142, 142, 142, 0.15);
+  padding: 28rem 16rem;
+  width: 90%;
+  border-radius: 10rem;
+  top: 0;
+  &--disable {
+    display: none;
+  }
+  &__button {
+    width: 270rem;
+    height: 56rem;
+    background: #0039A6;
+    border: 2rem solid #0039A6;
+    box-sizing: border-box;
+    border-radius: 10rem;
+    font-size: 18rem;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 33rem;
+  }
+}
+
+@media (min-width: 813px) {
+  .tariffs-mobile {
+    display: none;
+  }
+}

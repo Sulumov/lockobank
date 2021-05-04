@@ -1,0 +1,40 @@
+.advantages {
+  margin-top: 100rem;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50rem;
+
+  }
+  &__item{
+  width: 360rem !important;
+    height: 229rem;
+    background: #FFFFFF;
+    border: 1rem solid #DBDBDB;
+    box-sizing: border-box;
+    box-shadow: 0rem 0rem 5rem rgba(142, 142, 142, 0.15);
+    border-radius: 10rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 25rem;
+    h5{
+      color: #0039A6;
+      height: 80rem;
+      font-style: normal;
+      font-size: 19rem;
+    }
+    p{
+      font-size: 12rem;
+      color: #666666;
+    }
+    @media (max-width: 900px) {
+      width: 320rem !important;
+    }
+    @media (max-width: 700px) {
+      width: 100% !important;
+      margin:  0 auto;
+    }
+  }
+}

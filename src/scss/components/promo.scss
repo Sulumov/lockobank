@@ -1,0 +1,103 @@
+.promo {
+  height: 670rem;
+  background: radial-gradient(47.38% 84.37% at 25.64% 47.3%, #002C77 7.68%, #00153A 53.83%, #000000 100%);
+  font-family: Uni Sans, sans-serif;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__text {
+    padding-top: 166rem;
+    width: 50%;
+  }
+
+  &__title-1 {
+    font-weight: 900;
+    font-size: 46rem;
+    line-height: 55rem;
+    color: #FFFFFF;
+    margin-bottom: 50rem;
+    text-transform: uppercase;
+  }
+
+  &__title-2 {
+    font-weight: 900;
+    font-size: 46rem;
+    line-height: 55rem;
+    color: #00A1DE;
+    margin-bottom: 69rem;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    display: inline-block;
+    background: #EEAF30;
+
+    border-radius: 15rem;
+    padding: 21rem 0 22rem;
+    width: 314rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    transition: .1s linear;
+    &:hover {
+      box-shadow: 0rem 0rem 25rem #00A1DE;
+    }
+  }
+
+  &__friday {
+    width: 616rem;
+    height: 534rem;
+    background-image: url("../img/black_friday.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 813px) {
+    height: auto;
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 44rem;
+      padding-bottom: 76rem;
+      padding-left: 30rem;
+      padding-right: 30rem;
+    }
+    &__text {
+      display: contents;
+    }
+    &__title-1 {
+      font-weight: 900;
+      font-size: 30rem;
+      line-height: 36rem;
+      margin-bottom: 17rem;
+      order: 1;
+    }
+
+    &__title-2 {
+      font-weight: 900;
+      font-size: 24rem;
+      line-height: 29rem;
+      margin-bottom: 12rem;
+      order: 2;
+    }
+
+    &__friday {
+      width: 316rem;
+      height: 275rem;
+      order: 3;
+      margin-bottom: 22rem;
+    }
+
+    &__btn {
+      order: 4;
+      width: 270rem;
+      padding: 17rem 0;
+    }
+  }
+
+}

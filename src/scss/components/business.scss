@@ -1,0 +1,214 @@
+.business {
+  padding-top: 130rem;
+  padding-bottom: 164rem;
+  &__container {
+    background-image: url("../img/business_dark.svg");
+    background-size: 650rem;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    font-family: "Uni Sans", sans-serif;
+    font-weight: 900;
+    font-size: 45rem;
+    text-transform: uppercase;
+    line-height: 67rem;
+    color: #0039A6;
+    margin-bottom: 9rem;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 22rem;
+    line-height: 29rem;
+    color: #444444;
+    font-family: "Segoe UI", sans-serif;
+    margin-bottom: 61rem;
+  }
+
+  &__list {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 24rem;
+    line-height: 32rem;
+    color: #444444;
+    margin-bottom: 49rem;
+
+    li {
+      margin-bottom: 26rem;
+      display: flex;
+
+      strong {
+        font-weight: bold;
+        font-size: 24rem;
+        line-height: 32rem;
+        color: #0039A6;
+        margin-left: 5rem;
+      }
+
+      &::before {
+        content: "0";
+        margin-top: -6rem;
+        width: 41rem;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 36rem;
+        line-height: 1;
+        color: #0039A6;
+        background-image: url("../img/rub.svg");
+        background-position: 25rem 15rem;
+        background-repeat: no-repeat;
+        margin-right: 36rem;
+      }
+    }
+  }
+
+  &__list-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__prompt--block{
+    display: block !important;
+  }
+  &__prompt{
+    position: absolute;
+    display: none;
+    top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.25);
+    border-radius: 10px;
+    width: 552px;
+    min-height: 219px;
+    padding: 25px;
+    p{
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    width: 25rem;
+    height: 25rem;
+    background-image: url("../img/info.svg");
+    background-size: 25rem;
+    margin-left: 15rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 813px) {
+    padding-top: 36rem;
+    padding-bottom: 75rem;
+
+    &__info {
+      width: 18rem;
+      height: 18rem;
+      background-size: 18rem;
+    }
+    &__container {
+      background-size: 333rem;
+      background-position: center calc(100% - 91rem);
+    }
+
+    &__title {
+      font-size: 28rem;
+      line-height: 34rem;
+      margin-bottom: 7rem;
+    }
+
+    &__subtitle {
+      font-size: 18rem;
+      line-height: 24rem;
+      margin-bottom: 34rem;
+    }
+    &__prompt{
+      left:0;
+      max-width: 552px;
+
+    }
+
+
+    &__list {
+      margin-bottom: 343rem;
+      font-size: 16rem;
+      line-height: 21rem;
+
+      li {
+        margin-bottom: 29rem;
+
+        strong {
+          font-weight: bold;
+          font-size: 16rem;
+          line-height: 21rem;
+        }
+
+        &::before {
+          font-size: 24rem;
+          background-size: 10rem;
+          background-position: 18rem 9rem;
+          width: 29rem;
+          margin-right: 19rem;
+        }
+      }
+
+    }
+  }
+}
+
+.acb {
+  padding-left: 88rem;
+  background-image: url("../img/acb.png");
+  background-size: 48rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24rem;
+    line-height: 28rem;
+    margin-bottom: 11rem;
+    color: #0039A6;
+  }
+
+  p {
+    font-family: "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16rem;
+    line-height: 24rem;
+    color: #666666;
+  }
+
+  @media (max-width: 813px) {
+    background-size: 40rem;
+    padding-left: 58rem;
+    &__title {
+      font-size: 20rem;
+      line-height: 23rem;
+      margin-bottom: 5rem;
+    }
+    p {
+      font-size: 10rem;
+      line-height: 20rem;
+    }
+
+  }
+
+}
+@media (max-width: 660px) {
+  .business__list-content{
+    position: static;
+  }
+  .business__list{
+    li{
+      position: relative;
+    }
+  }
+  .business__prompt{
+    width: 100%;
+  }
+
+}
+
+
